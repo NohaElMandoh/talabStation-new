@@ -40,11 +40,28 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'merchant_web' => [
+            'driver' => 'session',
+            'provider' => 'merchants',
+        ],
 
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
-            'hash' => false,
+        ],
+
+        'client' => [
+            'driver' => 'token',
+            'provider' => 'clients',
+        ],
+
+        'merchant' => [
+            'driver' => 'token',
+            'provider' => 'merchants',
+        ],
+        'runner' => [
+            'driver' => 'token',
+            'provider' => 'runners',
         ],
     ],
 
@@ -69,6 +86,18 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
+        ],
+        'clients' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Client::class,
+        ],
+        'merchants' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Merchant::class,
+        ],
+        'runners' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Runner::class,
         ],
 
         // 'users' => [

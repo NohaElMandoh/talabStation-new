@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Exceptions;
-
+use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Support\Arr;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -37,5 +38,28 @@ class Handler extends ExceptionHandler
         $this->reportable(function (Throwable $e) {
             //
         });
+    }
+    protected function unauthenticated($request, AuthenticationException $exception)
+    {
+        if ($request->expectsJson()) {
+
+            return response()->json(['status'=>401,'msg' => 'Unauthenticated.','data'=>"لا توجد لديك صلاحية"]);
+        }
+
+        // return redirect()->guest('login');
+        // $guard = array_get($exception->guards(),0);
+        $guard = Arr::get($exception->guards(), 0);
+
+        switch ($guard) {
+            case 'merchant_web':
+                return redirect()->guest(route('merchant.show.login'));
+                break;
+
+            default:
+                return redirect()->guest(route('login'));
+                break;
+        }
+
+       
     }
 }
