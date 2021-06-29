@@ -12,6 +12,7 @@ use App\Mail\MerchantResetPassword;
 use App\Mail\resetpassword;
 use App\Models\Merchant;
 use Config;
+use Illuminate\Support\Str;
 
 class AuthController extends Controller
 {
@@ -54,8 +55,8 @@ class AuthController extends Controller
             // return responseJson(0, $validation->errors()->first(), $errorString);
             return responseJson(0,  $errorString, null);
         }
-
-        $userToken = str_random(60);
+        
+        $userToken = Str::random(60);
         $request->merge(array('api_token' => $userToken));
         $request->merge(array('password' => bcrypt($request->password)));
         $user = Merchant::create($request->all());
@@ -104,7 +105,7 @@ class AuthController extends Controller
                 Mail::send('emails.reset', ['code' => $code], function ($mail) use ($user) {
                     $mail->from('proofesser@gmail.com', 'تطبيق Talab Station');
                     $mail->bcc("nohamelmandoh@gmail.com");
-                    $mail->to($user->email, $user->name)->subject('تأكيد كلمة المرور');
+                    $mail->to($user->email, $user->name)->subject('تفعيل كلمة المرور');
                 });
 
                 return responseJson(1, 'برجاء فحص بريدك الالكتروني');
