@@ -8,6 +8,6 @@ class Token extends Model
 {
     protected $table = 'tokens';
     public $timestamps = true;
-    protected $fillable = array('user_id','token','type');
+    protected $fillable = array('token','type','accountable_id','accountable_type');
     
 }
