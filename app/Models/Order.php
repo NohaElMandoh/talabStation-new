@@ -71,7 +71,7 @@ class Order extends Model
 
     public function client()
     {
-        return $this->belongsTo('App\Models\Client','client');
+        return $this->belongsTo('App\Models\Client','id','client_id');
     }
 
     public function items()
