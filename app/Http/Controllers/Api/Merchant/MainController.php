@@ -10,6 +10,7 @@ use App\Models\Order;
 use App\Models\Restaurant;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Resources\OrderResource;
 use App\Models\Runner;
 use App\Models\Token;
 use Carbon\Carbon;
@@ -244,8 +245,8 @@ class MainController extends Controller
         } else
             $orders =   $request->user()->orders()->latest()->paginate(20);
 
-        return responseJson(1, 'تم التحميل', $orders->load('items', 'merchant', 'client.region'));
-        // return responseJson(1, 'تم التحميل', OrderResource::collection($orders) );
+        // return responseJson(1, 'تم التحميل', $orders->load('items', 'merchant', 'client.region'));
+        return responseJson(1, 'تم التحميل', OrderResource::collection($orders) );
     }
 
     public function showOrder(Request $request)

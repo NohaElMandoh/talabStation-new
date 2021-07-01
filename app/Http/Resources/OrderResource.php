@@ -15,10 +15,18 @@ class OrderResource extends ResourceCollection
     public function toArray($request)
     {
         return [
-            
-            'id' => $this->id,
-            'name_en' => $this->name,
-           
+
+            'order_id' => $this->id,
+            'client_name' => $this->client->name,
+            'price' => $this->cost,
+            'delivery_cost' => $this->delivery_cost,
+            'total' => $this->total,
+            'address' => $this->address,
+            'phone' => $this->phone,
+            'lat' => $this->client->lat,
+            'lang' => $this->client->lang,
+            'photo_url' => $this->client->photo_url,
+            'created_at'=>$this->created_at->toDateString().' '.$this->created_at->format('g:i A'),
         ];
     }
 }
