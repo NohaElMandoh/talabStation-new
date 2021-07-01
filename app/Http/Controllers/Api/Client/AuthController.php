@@ -10,6 +10,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Cart;
 use Illuminate\Validation\Rule;
 use Mail;
+use Illuminate\Support\Str;
 
 class AuthController extends Controller
 {
@@ -74,7 +75,8 @@ class AuthController extends Controller
             // return responseJson(0,$validation->errors()->first(),$data);
         }
 
-        $userToken = str_random(60);
+      
+        $userToken = Str::random(60);
         $request->merge(array('api_token' => $userToken));
         $request->merge(array('password' => bcrypt($request->password)));
         $user = Client::create($request->all());

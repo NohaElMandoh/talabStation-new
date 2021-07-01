@@ -52,7 +52,8 @@ class Merchant extends Authenticatable
 
     public function orders()
     {
-        return $this->belongsToMany('App\Models\Item','App\Models\ItemOrder','merchant_id');
+        // return $this->belongsToMany('App\Models\Item','App\Models\ItemOrder');
+        return $this->hasMany('App\Models\Order')->orderBy('created_at','DESC');
     }
 
     public function offers()
