@@ -244,7 +244,7 @@ class MainController extends Controller
         } else
             $orders =   $request->user()->orders()->latest()->paginate(20);
 
-        return responseJson(1, 'تم التحميل', $orders->load('items', 'merchant', 'client.region', 'runner'));
+        return responseJson(1, 'تم التحميل', $orders->load('items', 'merchant', 'client.region'));
     }
 
     public function showOrder(Request $request)
