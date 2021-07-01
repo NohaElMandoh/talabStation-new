@@ -2,9 +2,11 @@
 
 namespace App\Http\Resources;
 
+use Illuminate\Http\Resources\Json\JsonResource;
 use Illuminate\Http\Resources\Json\ResourceCollection;
+use Psy\Util\Json;
 
-class OrderResource extends ResourceCollection
+class OrderResource extends JsonResource
 {
     /**
      * Transform the resource collection into an array.
