@@ -378,6 +378,7 @@ class MainController extends Controller
         $delivery_cost = settings()->delivery_cost;
         $shopping_cost = settings()->shopping_cost;
         $merchants_ids = [];
+        $merchant_id = 0;
         // info($request->items);
         foreach ($request->items as $i) {
             if ($i['type'] == 'item') {
@@ -404,9 +405,10 @@ class MainController extends Controller
                 $price = $item->price - $item->discount;
                 $cost += ($price * $i['quantity']);
                 array_push($merchants_ids, $item->merchant_id);
+                $merchant_id = $item->merchant_id;
             } else  return responseJson(0, 'المنتج غير موجود', null);
         }
-
+        // return $merchant_id;
         // minimum charge
         // if ($cost >= $merchant->minimum_charger) {
         $total = $cost + $delivery_cost + $shopping_cost; // 200 SAR
@@ -464,10 +466,28 @@ class MainController extends Controller
                 'imageUrl' => url('uploads/mock.jpg')
             ];
             $send = notifyByFirebase($title, $body, $tokens, $data);
-            info("firebase result: " . $send);
+            info("firebase result client: " . $send);
             // info("firebase data: " . $data);
 
         }
+        $merchant = Merchant::where('id', $merchant_id)->first();
+       $merchant_tokens= $merchant->tokens()->pluck('token')->toArray();
+        if (count($tokens)) {
+
+            $title = 'طلب جديد';
+            $body = ' لديك طلب جديد رقم' . $order->id;
+            $data = [
+                'title' => 'طلب جديد',
+                'body' =>  'لديك طلب جديد رقم' . $order->id,
+                'imageUrl' => url('uploads/mock.jpg')
+            ];
+            $send = notifyByFirebase($title, $body, $merchant_tokens, $data);
+            info("firebase result merchant: " . $send);
+            // info("firebase data: " . $data);
+
+        }
+        // $tokens = $request->user()->tokens()->where('token', '!=', '')->pluck('token')->toArray();
+
         $data = [
             'order' => $order->fresh() // $order->fresh()  ->load (lazy eager loading) ->with('items')
         ];
