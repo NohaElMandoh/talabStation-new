@@ -193,7 +193,8 @@ Route::group(['prefix' =>'v1'],function(){
         Route::post('profile', 'App\Http\Controllers\Api\Merchant\AuthController@profile');
         Route::post('reset-password', 'App\Http\Controllers\Api\Merchant\AuthController@reset');
         Route::post('new-password', 'App\Http\Controllers\Api\Merchant\AuthController@password');
-
+        Route::post('offerTitles','App\Http\Controllers\Api\Merchant\MainController@offerTitles');
+        
         Route::group(['middleware'=>'auth:merchant'],function(){
             
             Route::get('allRunners','App\Http\Controllers\Api\Merchant\MainController@allRunners');
@@ -217,7 +218,7 @@ Route::group(['prefix' =>'v1'],function(){
             Route::post('delete-item','App\Http\Controllers\Api\Merchant\MainController@deleteItem');
 
             Route::get('my-offers','App\Http\Controllers\Api\Merchant\MainController@myOffers');
-            Route::post('offerTitles','App\Http\Controllers\Api\Merchant\MainController@offerTitles');
+          
 
             Route::post('new-offer','App\Http\Controllers\Api\Merchant\MainController@newOffer');
             Route::post('update-offer','App\Http\Controllers\Api\Merchant\MainController@updateOffer');
