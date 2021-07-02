@@ -184,7 +184,7 @@ Route::group(['prefix' =>'v1'],function(){
         });
     });
     Route::group(['prefix' =>'merchant'],function(){
-
+//->middleware('check-commissions')
         Route::post('register', 'App\Http\Controllers\Api\Merchant\AuthController@register');
         Route::post('login', 'App\Http\Controllers\Api\Merchant\AuthController@login');
         Route::post('checkEmail', 'App\Http\Controllers\Api\Merchant\AuthController@checkEmail');
@@ -204,7 +204,7 @@ Route::group(['prefix' =>'v1'],function(){
 
             Route::post('update-categories', 'App\Http\Controllers\Api\Merchant\MainController@updateCategories');
 
-            Route::post('profile', 'App\Http\Controllers\Api\Merchant\AuthController@profile')->middleware('check-commissions');
+            Route::post('profile', 'App\Http\Controllers\Api\Merchant\AuthController@profile');
             Route::post('register-token', 'App\Http\Controllers\Api\Merchant\AuthController@registerToken');
             Route::post('remove-token', 'App\Http\Controllers\Api\Merchant\AuthController@removeToken');
 
@@ -212,22 +212,22 @@ Route::group(['prefix' =>'v1'],function(){
             Route::get('myCategories','App\Http\Controllers\Api\Merchant\MainController@myCategories');
 
             Route::post('my-items','App\Http\Controllers\Api\Merchant\MainController@myItems');
-            Route::post('new-item','App\Http\Controllers\Api\Merchant\MainController@newItem')->middleware('check-commissions');
-            Route::post('update-item','App\Http\Controllers\Api\Merchant\MainController@updateItem')->middleware('check-commissions');
-            Route::post('delete-item','App\Http\Controllers\Api\Merchant\MainController@deleteItem')->middleware('check-commissions');
+            Route::post('new-item','App\Http\Controllers\Api\Merchant\MainController@newItem');
+            Route::post('update-item','App\Http\Controllers\Api\Merchant\MainController@updateItem');
+            Route::post('delete-item','App\Http\Controllers\Api\Merchant\MainController@deleteItem');
 
             Route::get('my-offers','App\Http\Controllers\Api\Merchant\MainController@myOffers');
-            Route::post('new-offer','App\Http\Controllers\Api\Merchant\MainController@newOffer')->middleware('check-commissions');
-            Route::post('update-offer','App\Http\Controllers\Api\Merchant\MainController@updateOffer')->middleware('check-commissions');
-            Route::post('delete-offer','App\Http\Controllers\Api\Merchant\MainController@deleteOffer')->middleware('check-commissions');
+            Route::post('new-offer','App\Http\Controllers\Api\Merchant\MainController@newOffer');
+            Route::post('update-offer','App\Http\Controllers\Api\Merchant\MainController@updateOffer');
+            Route::post('delete-offer','App\Http\Controllers\Api\Merchant\MainController@deleteOffer');
 
             Route::get('my-orders','App\Http\Controllers\Api\Merchant\MainController@myOrders');
             Route::get('show-order','App\Http\Controllers\Api\Merchant\MainController@showOrder');
-            Route::post('confirm-order','App\Http\Controllers\Api\Merchant\MainController@confirmOrder')->middleware('check-commissions');
-            Route::post('accept-order','App\Http\Controllers\Api\Merchant\MainController@acceptOrder')->middleware('check-commissions');
-            Route::post('reject-order','App\Http\Controllers\Api\Merchant\MainController@rejectOrder')->middleware('check-commissions');
+            Route::post('confirm-order','App\Http\Controllers\Api\Merchant\MainController@confirmOrder');
+            Route::post('accept-order','App\Http\Controllers\Api\Merchant\MainController@acceptOrder');
+            Route::post('reject-order','App\Http\Controllers\Api\Merchant\MainController@rejectOrder');
             Route::get('notifications','App\Http\Controllers\Api\Merchant\MainController@notifications');
-            Route::post('change-state','App\Http\Controllers\Api\Merchant\MainController@changeState')->middleware('check-commissions');
+            Route::post('change-state','App\Http\Controllers\Api\Merchant\MainController@changeState');
             
             Route::get('commissions','App\Http\Controllers\Api\Merchant\MainController@commissions');
         });

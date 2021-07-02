@@ -20,7 +20,7 @@ class Offer extends Model
     }
     public function items()
     {
-        return $this->belongsToMany('App\Models\Item','item_offer','offer_id','item_id');
+        return $this->belongsToMany('App\Models\Item','item_offer','offer_id','item_id')->withPivot('price');
     }
    
     public function offerTitle()
