@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- FAVICON -->
-    <link rel="icon" href="http://crazycafe.net/html/appiyan/assets/img/favicon.png">
+    <link rel="icon" href="https://talabstation.org/TalabStation/Dashboard-UI/images/talab-station-logo.png">
     <!-- TITLE -->
     <title>Talab Station</title>
     <!-- bootstrap.min.css -->
