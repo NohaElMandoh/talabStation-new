@@ -661,6 +661,22 @@
         </div>
     </div>
     <!--  blog area end -->
+    <!-- map area start -->
+    <div class="blog-slide-area cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 wow fadeInUp text-center" style="visibility: visible; animation-name: fadeInUp;">
+                    <div class="section-title">
+                        <h2>Reach Us</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d853.7375363675468!2d33.795217670812214!3d31.138899246717045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14fc2d580e2dcac7%3A0xd87f52adb21367da!2sTalab%20Station!5e0!3m2!1sar!2seg!4v1625207445223!5m2!1sar!2seg" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- map are end -->
     <!--  contact area start -->
     <div class="contact-area cta" id="contact">
         <div class="container">
@@ -750,14 +766,14 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="footer-logo">
-                        <h4><a href="http://crazycafe.net/html/appiyan/index.html">Appiyan</a></h4>
+                    <img style="height:66px" src="{{asset('front/image/logo_white.png')}}" alt="">
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <div class="footer-title">
-                        <p>© 2018 All Right Revervd by <a href="http://crazycafe.net/html/appiyan/index.html">CrazyCafe</a></p>
+                    <div class="footer-title" style="margin-top:32px">
+                        <p>Designed by <a href="https://www.facebook.com/Prof.MohamedAtef.programming">Monosoft Solutions</a></p>
                     </div>
                 </div>
             </div>

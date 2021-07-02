@@ -812,7 +812,7 @@ a.header-btn.cta,
 
 .home2-footer-bg,
 .footer-area.cta {
-	background: #37424f;
+	background: #000;
 }
 
 .home3-theme-color,
@@ -2560,7 +2560,7 @@ body.home1 .contact-form form input[type="submit"]:hover {
 }
 
 .footer-logo {
-	margin-top: 28px;
+	margin-top: 0px;
 }
 
 .footer-title p {
