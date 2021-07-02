@@ -527,7 +527,7 @@ body.home7 .single-pricing:hover ul li,
 body.home7 .about-single-content p,
 .single-blog-content p,
 .single-coments-text p {
-	color: #37424f;
+	color: #000000;
 }
 
 .home1-hero-txr-para-bg,
@@ -764,12 +764,12 @@ a.header-btn.cta,
 .home3 div#sticky-wrapper.is-sticky .header-area .mainmenu ul li a:hover,
 .home4 div#sticky-wrapper.is-sticky .header-area .mainmenu ul li a:hover,
 .home2 div#sticky-wrapper.is-sticky .header-area .mainmenu ul li.active a {
-	color: #2c98f0;
+	color: #c40e3d;
 }
 
 .home2-theme-bg,
 .home2 div#sticky-wrapper.is-sticky .header-area a.header-btn {
-	background: #2c98f0;
+	background: #c40e3d;
 	border: 2px solid transparent;
 }
 
@@ -985,7 +985,7 @@ body.home7 .contact-area.cta3 .contact-form form textarea:focus {
 }
 
 .logo {
-	padding-top: 13px;
+	padding-top: 0px;
 }
 
 .logo a {
@@ -1399,8 +1399,8 @@ body.home6 .about-single-item:hover h4 {
 }
 
 body.home2 .about-single-item:hover h4 {
-	background: -webkit-linear-gradient(left, #2b98f0 0%, #3f58b5 70%);
-	background: linear-gradient(to right, #2b98f0 0%, #3f58b5 70%);
+	background: -webkit-linear-gradient(left, #c40e3d 0%, #c40e3d 70%);
+	background: linear-gradient(to right, #c40e3d 0%, #c40e3d 70%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -2573,8 +2573,8 @@ body.home1 .contact-form form input[type="submit"]:hover {
 ====/========        =======/==== */
 
 .home2-hero-area {
-	background-image: -webkit-linear-gradient(0deg, #2196f3 0%, #3074d4 60%, #3f51b5 100%);
-	background-image: -ms-linear-gradient(0deg, #2196f3 0%, #3074d4 60%, #3f51b5 100%);
+	background-image: -webkit-linear-gradient(0deg, #c40e3d 0%, #c40e3d 60%, #c40e3d 100%);
+	background-image: -ms-linear-gradient(0deg, #c40e3d 0%, #c40e3d 60%, #c40e3d 100%);
 	padding-top: 140px;
 	padding-bottom: 80px;
 	position: relative;
@@ -2742,7 +2742,7 @@ body.home6 .contact-area.cta5 .home-2-form-submit input[type="submit"]:hover {
 .get-area.cta {
 	-webkit-transform: skewY(0deg);
 	transform: skewY(0deg);
-	background: #37424f;
+	background: #000000;
 }
 
 .get-area.cta .get-area-left {
@@ -2757,11 +2757,11 @@ body.home6 .contact-area.cta5 .home-2-form-submit input[type="submit"]:hover {
 }
 
 .get-area.cta .get-btn.get-btn1 {
-	background: url(assets/img/home2-get-btn2.png);
+	background: url(front/image/home2-get-btn2.png);
 }
 
 .get-area.cta .get-btn.get-btn2 {
-	background: url(assets/img/home2-get-btn1.png);
+	background: url(front/image/home2-get-btn1.png);
 }
 
 .get-area.cta .get-btn.get-btn2:hover {
@@ -2829,7 +2829,7 @@ body.home6 .contact-area.cta5 .home-2-form-submit input[type="submit"]:hover {
 /* home 2 video area css */
 
 .video-area.cta:before {
-	background: #374250;
+	background: #000000;
 	-webkit-transform: skewY(0deg);
 	transform: skewY(0deg);
 	opacity: .8;
@@ -4142,7 +4142,7 @@ body.home7 .screenshot-area {
 /* home7 video area css */
 
 body.home7 .video-area-cta {
-	background: url(assets/img/home7-video-bg.png) no-repeat;
+	background: url(front/image/home7-video-bg.png) no-repeat;
 	position: relative;
 	padding-bottom: 210px;
 	padding-top: 220px;
@@ -4405,23 +4405,23 @@ body.home7 .get-app-right {
 }
 
 body.home7 .get-btn {
-	background: url(assets/img/home7-get-btn1.png) no-repeat;
+	background: url(front/image/home7-get-btn1.png) no-repeat;
 	-webkit-transition: .3s;
 	transition: .3s;
 }
 
 body.home7 .get-btn.get-btn2 {
-	background: url(assets/img/home7-get-btn2.png) no-repeat;
+	background: url(front/image/home7-get-btn2.png) no-repeat;
 	-webkit-transition: .3s;
 	transition: .3s;
 }
 
 body.home7 .get-btn.get-btn2:hover {
-	background: url(assets/img/get-app-btn2.png);
+	background: url(front/image/get-app-btn2.png);
 }
 
 body.home7 .get-btn.get-btn1:hover {
-	background: url(assets/img/get-app-hover1-btn.png);
+	background: url(front/image/get-app-hover1-btn.png);
 }
 
 /* home7 testimonial area css */
@@ -5716,112 +5716,112 @@ a.preview-btn:hover {
 }
 
 .home1-download-btn {
-	background: url(assets/img/hero-app-logo1.png);
+	background: url(front/image/hero-app-logo1.png);
 	margin-right: 20px;
 }
 
 .home1-download-btn2 {
-	background: url(assets/img/hero-app-logo2.png);
+	background: url("{{asset('front/image/hero-app-logo2.png')}}");
 }
 
 .home2-download-btn {
-	background: url(assets/img/hero-app-logo1.png);
+	background: url(front/image/hero-app-logo1.png);
 }
 
 .home2-download-btn2 {
-	background: url(assets/img/hero-app-logo2.png);
+	background: url("{{asset('front/image/hero-app-logo2.png')}}");
 }
 
 .home3-download-btn {
-	background: url(assets/img/home3-download-btn1.png);
+	background: url(front/image/home3-download-btn1.png);
 	margin-right: 20px;
 }
 
 .home3-download-btn2 {
-	background: url(assets/img/home3-download-btn12.png);
+	background: url(front/image/home3-download-btn12.png);
 }
 
 .home4-download-btn {
-	background: url(assets/img/home3-download-btn1.png);
+	background: url(front/image/home3-download-btn1.png);
 	margin-right: 20px;
 }
 
 .home4-download-btn2 {
-	background: url(assets/img/home3-download-btn12.png);
+	background: url(front/image/home3-download-btn12.png);
 }
 
 .home5-download-btn {
-	background: url(assets/img/home3-download-btn1.png);
+	background: url(front/image/home3-download-btn1.png);
 	margin-right: 20px;
 }
 
 .home5-download-btn2 {
-	background: url(assets/img/home3-download-btn12.png);
+	background: url(front/image/home3-download-btn12.png);
 }
 
 .home7-download-btn {
-	background: url(assets/img/home3-download-btn1.png);
+	background: url(front/image/home3-download-btn1.png);
 	margin-right: 20px;
 }
 
 .home7-download-btn2 {
-	background: url(assets/img/home3-download-btn12.png);
+	background: url(front/image/home3-download-btn12.png);
 }
 
 /*get btn*/
 
 .home1-get-btn {
-	background: url(assets/img/get-app-btn1.png);
+	background: url(front/image/get-app-btn1.png);
 	margin-right: 20px;
 }
 
 .home1-get-btn2 {
-	background: url(assets/img/get-app-btn2-hover.png);
+	background: url(front/image/get-app-btn2-hover.png);
 }
 
 .home2-get-btn {
-	background: url(assets/img/home2-get-btn1.png);
+	background: url(front/image/home2-get-btn1.png);
 	margin-right: 20px;
 }
 
 .home2-get-btn2 {
-	background: url(assets/img/home2-get-btn2.png);
+	background: url(front/image/home2-get-btn2.png);
 }
 
 .home3-get-btn {
-	background: url(assets/img/home3-get-btn1.png);
+	background: url(front/image/home3-get-btn1.png);
 	margin-right: 20px;
 }
 
 .home3-get-btn2 {
-	background: url(assets/img/home3-get-btn2.png);
+	background: url(front/image/home3-get-btn2.png);
 }
 
 .home4-get-btn {
-	background: url(assets/img/home3-get-btn1.png);
+	background: url(front/image/home3-get-btn1.png);
 	margin-right: 20px;
 }
 
 .home4-get-btn2 {
-	background: url(assets/img/home3-get-btn2.png);
+	background: url(front/image/home3-get-btn2.png);
 }
 
 .home5-get-btn {
-	background: url(assets/img/home5-get-btn1.png);
+	background: url(front/image/home5-get-btn1.png);
 	margin-right: 20px;
 }
 
 .home5-get-btn2 {
-	background: url(assets/img/home5-get-btn2.png);
+	background: url(front/image/home5-get-btn2.png);
 }
 
 .home7-get-btn {
-	background: url(assets/img/home7-get-btn1.png);
+	background: url(front/image/home7-get-btn1.png);
 	margin-right: 20px;
 }
 
 .home7-get-btn2 {
-	background: url(assets/img/home7-get-btn2.png);
+	background: url(front/image/home7-get-btn2.png);
 }
 
 /*all page get btn css*/

@@ -7,7 +7,7 @@
     <!-- FAVICON -->
     <link rel="icon" href="http://crazycafe.net/html/appiyan/assets/img/favicon.png">
     <!-- TITLE -->
-    <title>Home 2 | Appiyan - App Landing Page</title>
+    <title>Talab Station</title>
     <!-- bootstrap.min.css -->
    @include('front.partials.style')
     <!--[if lt IE 9]>
@@ -31,7 +31,7 @@
             <div class="row">
                 <div class="col-md-2">
                     <div class="logo cta">
-                        <a href="http://crazycafe.net/html/appiyan/home1.html">Appiyan</a>
+                     <img style="height:66px" src="{{asset('front/image/logo.png')}}" alt="">
                     </div>
                 </div>
                 <div class="col-md-10 text-center">
@@ -54,7 +54,7 @@
                             <li><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#testimonial" role="menuitem" tabindex="-1">Testimonials</a></li>
                             <li><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#contact" role="menuitem" tabindex="-1">Contact</a></li>
                         </ul></div></div>
-                    <div class="mainmenu cta">
+                    <div class="mainmenu cta" style="margin-top:7px">
                         <ul id="nav">
                             <li><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#home">Home</a>
                                 <ul class="drop-menu">
@@ -87,7 +87,7 @@
             <div class="row">
                 <div class="col-lg-4 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
                     <div class="home2-hero-mobile">
-                        <img src="{{asset('front/image/home2-hero-mobile.png')}}" alt="">
+                        <img src="{{asset('front/image/home2-hero-mobile.jpg')}}" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 text-center col-md-12 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
@@ -285,7 +285,7 @@
                     <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1880px, 0px, 0px); transition: all 0.25s ease 0s; width: 3133.33px;"><div class="owl-item cloned" style="width: 293.333px; margin-right: 20px;"><div class="home2-screenshot-single-slide">
                             <img src="{{asset('front/image/home2-sc-2.jpg')}}" alt="">
                         </div></div><div class="owl-item cloned" style="width: 293.333px; margin-right: 20px;"><div class="home2-screenshot-single-slide">
-                            <img src="{{asset('front/image/home2-sc-3.jpg')}}" alt="">
+                            <img src="{{asset('front/image/home2-hero-mobile.jpg')}}" alt="">
                         </div></div><div class="owl-item cloned" style="width: 293.333px; margin-right: 20px;"><div class="home2-screenshot-single-slide">
                             <img src="{{asset('front/image/home2-sc-2.jpg')}}" alt="">
                         </div></div><div class="owl-item" style="width: 293.333px; margin-right: 20px;"><div class="home2-screenshot-single-slide">
