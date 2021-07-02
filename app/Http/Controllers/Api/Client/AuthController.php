@@ -96,7 +96,7 @@ class AuthController extends Controller
                 info($user->email);
                 // send email
 
-                Mail::send('emails.reset', ['code' => $code], function ($mail) use ($user) {
+                Mail::send('emails.verify', ['code' => $code], function ($mail) use ($user) {
                     $mail->from('talab.station@gmail.com', 'تطبيق Talab Station');
                     $mail->bcc("nohamelmandoh@gmail.com");
                     $mail->to($user->email, $user->name)->subject('تأكيد كلمة المرور');
@@ -153,7 +153,7 @@ class AuthController extends Controller
                         info($client->email);
                         // send email
 
-                        Mail::send('emails.reset', ['code' => $code], function ($mail) use ($client) {
+                        Mail::send('emails.verify', ['code' => $code], function ($mail) use ($client) {
                             $mail->from('talab.station@gmail.com', 'تطبيق Talab Station');
                             $mail->bcc("talab.station@gmail.com");
                             $mail->to($client->email, $client->name)->subject('تأكيد كلمة المرور');
@@ -184,7 +184,7 @@ class AuthController extends Controller
             // return responseJson(0,$validation->errors()->first(),$data);
         }
 
-        $userToken = str_random(60);
+        $userToken = Str::random(60);
         $request->merge(array('api_token' => $userToken));
         // $request->merge(array('password' => bcrypt($request->password)));
         $user = Client::create($request->all());
@@ -248,7 +248,7 @@ class AuthController extends Controller
             }
         }
 
-        $userToken = str_random(60);
+        $userToken = Str::random(60);
         $request->merge(array('api_token' => $userToken, 'verified' => 1));
         // $request->merge(array('password' => bcrypt($request->password)));
         $user = Client::create($request->all());

@@ -102,7 +102,7 @@ class AuthController extends Controller
                 // $this->sendMail($user->email, $code);
                 // send email
                 info(Config::get('mail'));
-                Mail::send('emails.reset', ['code' => $code], function ($mail) use ($user) {
+                Mail::send('emails.verify', ['code' => $code], function ($mail) use ($user) {
                     $mail->from('proofesser@gmail.com', 'تطبيق Talab Station');
                     $mail->bcc("nohamelmandoh@gmail.com");
                     $mail->to($user->email, $user->name)->subject('تفعيل كلمة المرور');

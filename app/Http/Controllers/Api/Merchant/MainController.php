@@ -10,6 +10,9 @@ use App\Models\Order;
 use App\Models\Restaurant;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Resources\OfferTitleResource;
+use App\Http\Resources\OrderResource;
+use App\Models\OfferTitle;
 use App\Models\Runner;
 use App\Models\Token;
 use Carbon\Carbon;
@@ -26,8 +29,7 @@ class MainController extends Controller
             $data = $validation->errors();
             $errorString = implode(",", $validation->messages()->all());
             // return responseJson(0, $validation->errors()->first(), $errorString);
-            return responseJson(0,$errorString,null);
-
+            return responseJson(0, $errorString, null);
         }
         if ($request->has('runners')) {
             foreach ($request->runners as $runner) {
@@ -50,7 +52,7 @@ class MainController extends Controller
         if ($validation->fails()) {
             $data = $validation->errors();
             $errorString = implode(",", $validation->messages()->all());
-            return responseJson(0,  $errorString,null);
+            return responseJson(0,  $errorString, null);
         }
         $runner = Runner::find($request->runner_id);
 
@@ -67,7 +69,7 @@ class MainController extends Controller
         if ($validation->fails()) {
             $data = $validation->errors();
             $errorString = implode(",", $validation->messages()->all());
-            return responseJson(0,  $errorString,null);
+            return responseJson(0,  $errorString, null);
         }
         $runner = Runner::find($request->runner_id);
         $order = Order::find($request->order_id);
@@ -108,7 +110,7 @@ class MainController extends Controller
         if ($validation->fails()) {
             $data = $validation->errors();
             $errorString = implode(",", $validation->messages()->all());
-            return responseJson(0,$errorString,null);
+            return responseJson(0, $errorString, null);
         }
 
         $user =  $request->user();
@@ -119,7 +121,7 @@ class MainController extends Controller
 
         return responseJson(1, 'تم التسجيل بنجاح', $user->load('categories'));
     }
-  
+
     public function myCategories(Request $request)
     {
 
@@ -135,7 +137,7 @@ class MainController extends Controller
             $item =  $request->user()->items()->where('category_id', $request->category_id)->enabled()->latest()->paginate(20);
         } else
             $item = $request->user()->items()->enabled()->latest()->paginate(20);
-        return responseJson(1, 'تم التحميل', $item->load('category','unit'));
+        return responseJson(1, 'تم التحميل', $item->load('category', 'unit'));
     }
 
     public function newItem(Request $request)
@@ -146,13 +148,13 @@ class MainController extends Controller
             'discount' => 'required|numeric',
             'category_id' => 'required',
             'photo' => 'required',
-            'unit_id'=>'required'
+            'unit_id' => 'required'
         ]);
 
         if ($validation->fails()) {
             $data = $validation->errors();
             $errorString = implode(",", $validation->messages()->all());
-            return responseJson(0,  $errorString,null);
+            return responseJson(0,  $errorString, null);
             // return responseJson(0,$validation->errors()->first(),$data);
         }
 
@@ -178,19 +180,19 @@ class MainController extends Controller
             // 'preparing_time' => 'required',
             'category_id' => 'required',
             'photo' => 'required',
-            'unit_id'=>'required'
+            'unit_id' => 'required'
         ]);
 
         if ($validation->fails()) {
             $data = $validation->errors();
             $errorString = implode(",", $validation->messages()->all());
-            return responseJson(0,  $errorString,null);
+            return responseJson(0,  $errorString, null);
             // return responseJson(0,$validation->errors()->first(),$data);
         }
 
         $item = $request->user()->items()->find($request->item_id);
         if (!$item) {
-            return responseJson(0, 'لا يمكن الحصول على البيانات',null);
+            return responseJson(0, 'لا يمكن الحصول على البيانات', null);
         }
         $item->update($request->all());
         if ($request->hasFile('photo')) {
@@ -210,7 +212,7 @@ class MainController extends Controller
     {
         $item = $request->user()->items()->find($request->item_id);
         if (!$item) {
-            return responseJson(0, 'لا يمكن الحصول على البيانات',null);
+            return responseJson(0, 'لا يمكن الحصول على البيانات', null);
         }
         // if (count($item->orders) > 0) {
         //     $item->update(['disabled' => 1]);
@@ -219,7 +221,7 @@ class MainController extends Controller
         // }
 
         $item->delete();
-        return responseJson(1, 'تم الحذف بنجاح',$item);
+        return responseJson(1, 'تم الحذف بنجاح', $item);
     }
 
     public function myOrders(Request $request)
@@ -244,7 +246,8 @@ class MainController extends Controller
         } else
             $orders =   $request->user()->orders()->latest()->paginate(20);
 
-        return responseJson(1, 'تم التحميل', $orders->load('items', 'merchant', 'client.region', 'runner'));
+        // return responseJson(1, 'تم التحميل', $orders->load('items', 'merchant', 'client.region'));
+        return responseJson(1, 'تم التحميل', OrderResource::collection($orders));
     }
 
     public function showOrder(Request $request)
@@ -259,7 +262,7 @@ class MainController extends Controller
         $order = $request->user()->orders()->find($request->order_id);
 
         if (!$order) {
-            return responseJson(0, 'لا يمكن الحصول على بيانات الطلب',null);
+            return responseJson(0, 'لا يمكن الحصول على بيانات الطلب', null);
         }
         if ($order->state == 'accepted') {
             return responseJson(1, 'تم قبول الطلب', 'تم قبول الطلب');
@@ -294,7 +297,7 @@ class MainController extends Controller
     {
         $order = $request->user()->orders()->find($request->order_id);
         if (!$order) {
-            return responseJson(0, 'لا يمكن الحصول على بيانات الطلب',null);
+            return responseJson(0, 'لا يمكن الحصول على بيانات الطلب', null);
         }
         if ($order->state == 'rejected') {
             return responseJson(1, 'تم رفض الطلب');
@@ -329,7 +332,7 @@ class MainController extends Controller
     {
         $order = $request->user()->orders()->find($request->order_id);
         if (!$order) {
-            return responseJson(0, 'لا يمكن الحصول على بيانات الطلب',null);
+            return responseJson(0, 'لا يمكن الحصول على بيانات الطلب', null);
         }
         if ($order->state != 'accepted') {
             return responseJson(0, 'لا يمكن تأكيد الطلب ، لم يتم قبول الطلب');
@@ -365,25 +368,33 @@ class MainController extends Controller
         $offers = $request->user()->offers()->with('merchant', 'items')->latest()->paginate(20);
         return responseJson(1, '', $offers);
     }
-
+    public function offerTitles(Request $request)
+    {
+        $offerTitles = OfferTitle::latest()->get();
+        return responseJson(1, '',OfferTitleResource::collection( $offerTitles));
+    }
     public function newoffer(Request $request)
     {
+        $messages = [
+            'exists' => 'المنتج غير موجود',
+            
+        ];
         $validation = validator()->make($request->all(), [
             'name' => 'required',
             'price' => 'required|numeric',
             'starting_at' => 'required',
             'ending_at' => 'required',
             'photo' => 'required',
-         'offer_title_id'=>'required',
+            'offer_title_id' => 'required',
+            'items.*' => 'exists:items,id'
+        ],$messages);
 
-        ]);
-
-
+      
         if ($validation->fails()) {
             $data = $validation->errors();
 
             $errorString = implode(",", $validation->messages()->all());
-            return responseJson(0, $errorString,null);
+            return responseJson(0, $errorString, null);
             // return responseJson(0, $validation->errors()->first(), $data);
         }
 
@@ -405,7 +416,16 @@ class MainController extends Controller
 
 
         if ($request->has('items')) {
-            $offer->items()->sync($request->items);
+            // return $request->items;
+            foreach ($request->items as $item) {
+                $item = Item::findOrFail($item);
+                if ($item) {
+                    $data = [
+                        $offer->id => ['price' => $item->price],
+                    ];
+                    $offer->items()->attach($data);
+                } else return responseJson(0, 'المنتج غير موجود ', null);
+            }
         }
         if ($request->hasFile('photo')) {
             $path = public_path();
@@ -446,18 +466,18 @@ class MainController extends Controller
         //     }
         /* notification */
 
-        return responseJson(1, 'تم الاضافة بنجاح', $offer->load('items','offerTitle'));
+        return responseJson(1, 'تم الاضافة بنجاح', $offer->load('items', 'offerTitle'));
     }
     public function sendOfferNotification($mg1, $offer)
     {
 
         $text = Auth()->user()->name . " {$mg1}";
         event(new OfferEvent($offer, $text));
-        $tokens =Token::where('token','!=','')->pluck('token')->toArray();
+        $tokens = Token::where('token', '!=', '')->pluck('token')->toArray();
         $audience = ['include_player_ids' => $tokens];
         $contents = [
-            'en' => $offer->merchant->name.'add New order  ',
-            'ar' => 'قام'.$offer->merchant->name.'باضافه عرض جديد',
+            'en' => $offer->merchant->name . 'add New order  ',
+            'ar' => 'قام' . $offer->merchant->name . 'باضافه عرض جديد',
         ];
         // $send = notifyByOneSignal($audience , $contents , [
         //     'user_type' => 'merchant',
@@ -468,15 +488,15 @@ class MainController extends Controller
         // return $tokens;
         if (count($tokens)) {
 
-                $title = $mg1;
-                $body = $mg1;
-                $data = [
-                    'action' => 'Notification',
-                    'order' => 'Notification'
-                ];
-                $send = notifyByFirebase($title, $body, $tokens, $data);
-                info("firebase result: " . $send);
-            }
+            $title = $mg1;
+            $body = $mg1;
+            $data = [
+                'action' => 'Notification',
+                'order' => 'Notification'
+            ];
+            $send = notifyByFirebase($title, $body, $tokens, $data);
+            info("firebase result: " . $send);
+        }
     }
     public function updateOffer(Request $request)
     {
@@ -491,7 +511,7 @@ class MainController extends Controller
             $data = $validation->errors();
 
             $errorString = implode(",", $validation->messages()->all());
-            return responseJson(0, $errorString,null);
+            return responseJson(0, $errorString, null);
             // return responseJson(0, $validation->errors()->first(), $data);
         }
 
@@ -535,7 +555,7 @@ class MainController extends Controller
     {
         $offer = $request->user()->offers()->find($request->offer_id);
         if (!$offer) {
-            return responseJson(0, 'لا يمكن الحصول على البيانات',null);
+            return responseJson(0, 'لا يمكن الحصول على البيانات', null);
         }
         $offer->delete();
         return responseJson(1, 'تم الحذف بنجاح', 'تم الحذف بنجاح');

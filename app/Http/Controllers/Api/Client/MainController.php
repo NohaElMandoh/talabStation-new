@@ -472,7 +472,7 @@ class MainController extends Controller
         }
         $merchant = Merchant::where('id', $merchant_id)->first();
        $merchant_tokens= $merchant->tokens()->pluck('token')->toArray();
-        if (count($tokens)) {
+        if (count($merchant_tokens)) {
 
             $title = 'طلب جديد';
             $body = ' لديك طلب جديد رقم' . $order->id;
