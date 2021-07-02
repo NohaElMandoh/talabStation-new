@@ -10,7 +10,9 @@ use App\Models\Order;
 use App\Models\Restaurant;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Resources\OfferTitleResource;
 use App\Http\Resources\OrderResource;
+use App\Models\OfferTitle;
 use App\Models\Runner;
 use App\Models\Token;
 use Carbon\Carbon;
@@ -366,7 +368,11 @@ class MainController extends Controller
         $offers = $request->user()->offers()->with('merchant', 'items')->latest()->paginate(20);
         return responseJson(1, '', $offers);
     }
-
+    public function offerTitles(Request $request)
+    {
+        $offerTitles = OfferTitle::latest()->get();
+        return responseJson(1, '',OfferTitleResource::collection( $offerTitles));
+    }
     public function newoffer(Request $request)
     {
         $messages = [

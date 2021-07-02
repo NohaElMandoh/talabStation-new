@@ -19,6 +19,10 @@ class OfferTitle extends Model
     {
         return $this->hasMany('App\Models\Offer','offer_title_id');
     }
+    public function type()
+    {
+        return $this->belongsTo('App\Models\Type','type_id');
+    }
     
     
     public function getPhotoUrlAttribute($value)

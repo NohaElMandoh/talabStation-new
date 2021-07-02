@@ -217,6 +217,8 @@ Route::group(['prefix' =>'v1'],function(){
             Route::post('delete-item','App\Http\Controllers\Api\Merchant\MainController@deleteItem');
 
             Route::get('my-offers','App\Http\Controllers\Api\Merchant\MainController@myOffers');
+            Route::post('offerTitles','App\Http\Controllers\Api\Merchant\MainController@offerTitles');
+
             Route::post('new-offer','App\Http\Controllers\Api\Merchant\MainController@newOffer');
             Route::post('update-offer','App\Http\Controllers\Api\Merchant\MainController@updateOffer');
             Route::post('delete-offer','App\Http\Controllers\Api\Merchant\MainController@deleteOffer');
