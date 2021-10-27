@@ -128,8 +128,10 @@ function notifyByFirebase($title, $body, $tokens, $data = [], $is_notification =
         'priority' => 'high',
         'body' => $body,
         'title' => $title,
-        'photo_url' => url('uploads/thank-you-notify.jpg'),
-        'data' => $data
+        // 'photo_url' => url('uploads/thank-you-notify.jpg'),
+        'imageUrl' => url('uploads/mock.jpg'),
+        "click_action" =>".OrdersActivity",
+        // 'data' => $data
     );
     if ($is_notification)
     {
