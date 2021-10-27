@@ -112,8 +112,8 @@ function notifyByFirebase($title, $body, $tokens, $data = [], $is_notification =
     $fcmMsg = array(
         'body' => $body,
         'title' => $title,
-        'sound' => "default",
-        'color' => "#203E78",
+        'imageUrl' => url('uploads/mock.jpg'),
+        "click_action" =>".OrdersActivity",
         
     );
 // I haven't figured 'color' out yet.
