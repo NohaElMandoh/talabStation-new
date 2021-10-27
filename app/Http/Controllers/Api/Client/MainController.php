@@ -418,6 +418,7 @@ class MainController extends Controller
             'cost' => $cost,
             // 'delivery_cost' => $delivery_cost,
             'total' => $total,
+            'merchant_id'=>$merchant_id
             // 'commission' => $commission,
             // 'net' => $net,
         ]);
