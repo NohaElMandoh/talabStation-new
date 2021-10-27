@@ -16,7 +16,7 @@ class Order extends Model
 
     protected $fillable = array(
         'note', 'address',  'cost', 'delivery_cost', 'total',   'shopping_cost',
-        'state', 'client_id', 'delivery_confirmed_by_runner', 'delivery_confirmed_by_client', 'phone', 'home_phone', 'rejected_note','client_reject_reason','merchant_reject_reason'
+        'state', 'client_id', 'delivery_confirmed_by_runner', 'delivery_confirmed_by_client', 'phone', 'home_phone', 'rejected_note','client_reject_reason','merchant_reject_reason','merchant_id'
     );
     protected $appends = ['runner_state', 'merchants_photos'];
 
