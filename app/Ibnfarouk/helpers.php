@@ -133,7 +133,7 @@ function notifyByFirebase($title, $body, $tokens, $data = [], $is_notification =
     );
     if ($is_notification)
     {
-        $fcmFields['notification'] = $fcmMsg;
+        $fcmFields['data'] = $fcmMsg;
     }
 $FIREBASE_API_ACCESS_KEY='AAAAu1ZyMZ8:APA91bHQwmpK1aib90GDk-af2r37jrS3D7ikEFbNNKkzuxILTXxOe_laEfIap6v9x0HgSIFzEiYTpdDnbqk8XK0JNKMNQYUz1YWuW8E80HUvsPGO_EEH6055ysd0akvqqNchcTeGoyzY';
     $headers = array(
