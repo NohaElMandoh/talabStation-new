@@ -466,7 +466,6 @@ class MainController extends Controller
                 'body' =>  ' شكرا لاستخدامك تطبيق طلب ستيشن... طلب جديد رقم' . $order->id,
                 'imageUrl' => url('uploads/mock.jpg'),
 
-                "click_action" =>".OrdersActivity",
 
             ];
             $send = notifyByFirebase($title, $body, $tokens, $data);
