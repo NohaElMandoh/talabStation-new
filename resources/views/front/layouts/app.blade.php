@@ -9,7 +9,7 @@
     <!-- TITLE -->
     <title>Talab Station</title>
     <!-- bootstrap.min.css -->
-   @include('front.partials.style')
+   @include('front.partials.style') 
    <style>
 
 .get-area.cta .get-app-right {
@@ -24,7 +24,7 @@
         <![endif]-->
 </head>
 
-<body class="home2 loaded" data-new-gr-c-s-check-loaded="14.1014.0" data-gr-ext-installed="">
+<body class="home2 loaded" >
     <!--  page loader -->
     <div id="loader-wrapper">
         <div id="loader"></div>
@@ -563,7 +563,7 @@
    @include('front.partials.video')
     <!--  video area end -->
     <!--  blog area start -->
-    <div class="blog-slide-area cta">
+    <div class="blog-slide-area cta" style="display: none;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 wow fadeInUp text-center" style="visibility: visible; animation-name: fadeInUp;">
@@ -685,7 +685,7 @@
     </div>
     <!-- map are end -->
     <!--  contact area start -->
-    <div class="contact-area cta" id="contact">
+    <div class="contact-area cta" id="contact" style="display: none;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
