@@ -10,6 +10,14 @@
     <title>Talab Station</title>
     <!-- bootstrap.min.css -->
    @include('front.partials.style')
+   <style>
+
+.get-area.cta .get-app-right {
+ 
+    margin-top: -68px;
+}
+
+   </style>
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -35,8 +43,8 @@
                     </div>
                 </div>
                 <div class="col-md-10 text-center">
-                    <div class="responsive_menu"><div class="slicknav_menu"><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"><span class="slicknav_menutxt"></span><span class="slicknav_icon slicknav_no-text"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a><ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
-                            <li class="slicknav_collapsed slicknav_parent"><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row" style="outline: none;"><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#home" tabindex="-1">Home</a>
+                    <div class="responsive_menu"><div class="slicknav_menu"><a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed" style="outline: none;"><span class="slicknav_menutxt"></span><span class="slicknav_icon slicknav_no-text"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a><ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
+                            <li class="slicknav_collapsed slicknav_parent"><a href="#" role="menuitem" aria-haspopup="true" tabindex="-1" class="slicknav_item slicknav_row" style="outline: none;"><a href="#home" tabindex="-1">Home</a>
                                 <span class="slicknav_arrow">►</span></a><ul class="drop-menu slicknav_hidden" role="menu" aria-hidden="true" style="display: none;">
                                     <li><a href="http://crazycafe.net/html/appiyan/home1.html" role="menuitem" tabindex="-1">Home 1</a></li>
                                     <li><a href="http://crazycafe.net/html/appiyan/home2.html" role="menuitem" tabindex="-1">Home 2</a></li>
@@ -48,15 +56,15 @@
                                     <li><a href="http://crazycafe.net/html/appiyan/home8.html" role="menuitem" tabindex="-1">Home 8</a></li>
                                 </ul>
                             </li>
-                            <li><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#about" role="menuitem" tabindex="-1">About</a></li>
-                            <li><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#featured" role="menuitem" tabindex="-1">Features</a></li>
-                            <li><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#pricing" role="menuitem" tabindex="-1">Pricing</a></li>
-                            <li><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#testimonial" role="menuitem" tabindex="-1">Testimonials</a></li>
-                            <li><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#contact" role="menuitem" tabindex="-1">Contact</a></li>
+                            <li><a href="#about" role="menuitem" tabindex="-1">About</a></li>
+                            <li><a href="#featured" role="menuitem" tabindex="-1">Features</a></li>
+                            <li><a href="#pricing" role="menuitem" tabindex="-1">Pricing</a></li>
+                            <li><a href="#testimonial" role="menuitem" tabindex="-1">Testimonials</a></li>
+                            <li><a href="#contact" role="menuitem" tabindex="-1">Contact</a></li>
                         </ul></div></div>
                     <div class="mainmenu cta" style="margin-top:7px">
                         <ul id="nav">
-                            <li><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#home">Home</a>
+                            <li><a href="#home">Home</a>
                                 <ul class="drop-menu">
                                     <li><a href="http://crazycafe.net/html/appiyan/home1.html">Home 1</a></li>
                                     <li><a href="http://crazycafe.net/html/appiyan/home2.html">Home 2</a></li>
@@ -68,13 +76,13 @@
                                     <li><a href="http://crazycafe.net/html/appiyan/home8.html">Home 8</a></li>
                                 </ul>
                             </li>
-                            <li><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#about">About</a></li>
-                            <li><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#featured">Features</a></li>
-                            <li><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#pricing">Pricing</a></li>
-                            <li><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#testimonial">Testimonials</a></li>
-                            <li><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#contact">Contact</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#featured">Features</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
+                            <li><a href="#testimonial">Testimonials</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
-                        <a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#" class="header-btn cta">download now</a>
+                        <a href="#" class="header-btn cta">download now</a>
                     </div>
                 </div>
             </div>
@@ -92,12 +100,11 @@
                 </div>
                 <div class="col-lg-6 text-center col-md-12 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
                     <div class="home2-hero-text">
-                        <h1>The Best App to Increase<br>
-                        Your Productivity</h1>
-                        <p>A mobile app is a computer program designed to run on a
-                            <br> mobile device such as a phone/tablet or watch.</p>
-                        <a class="home2-download-btn" href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#"></a>
-                        <a class="home2-download-btn2" href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#"></a>
+                        <h1>Instant Food Delivery Service</h1>
+                        <p>Our services are a mobile-based, or web-based services.
+                            <br>You can use phone, laptop, or tablet.</p>
+                        <a class="home2-download-btn" href="#"></a>
+                        <a class="home2-download-btn2" href="#"></a>
                     </div>
                 </div>
             </div>
@@ -114,8 +121,8 @@
                             <span style="background: url(assets/img/home2-about-icon1.png);"></span>
                         </div>
                         <div class="about-single-content">
-                            <h4>24/7 Support</h4>
-                            <p>Apps that are not preinstalled are usually available through distribution platforms called app stores.</p>
+                            <h4>24/7 Client Support</h4>
+                            <p>Instant response on questions and queries of clients during the week 24/7. Clients can order different types of food via our client app.</p>
                         </div>
                     </div>
                 </div>
@@ -125,8 +132,8 @@
                             <span style="background: url(assets/img/home2-about-icon2.png);"></span>
                         </div>
                         <div class="about-single-content">
-                            <h4>Data Privacy</h4>
-                            <p>Apps that are not preinstalled are usually available through distribution platforms called app stores.</p>
+                            <h4>Merchants and Restaurants</h4>
+                            <p>Merchants and Restaurants can save their data via different types of Talab Station platforms. Merchants and Restaurants are integrated with Talab Station.</p>
                         </div>
                     </div>
                 </div>
@@ -136,8 +143,8 @@
                             <span style="background: url(assets/img/home2-about-icon3.png);"></span>
                         </div>
                         <div class="about-single-content">
-                            <h4>Friendly Code</h4>
-                            <p>Apps that are not preinstalled are usually available through distribution platforms called app stores.</p>
+                            <h4>Volunteering with us</h4>
+                            <p>Talab Station enable charities to book food for free from restaurants which excesses the need of restaurants. This food is delivered to the needing and poor families by Talab Station.</p>
                         </div>
                     </div>
                 </div>
@@ -246,7 +253,7 @@
             <div class="row">
                 <div class="col-lg-5 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
                     <div class="get-app-right">
-                        <img src="{{asset('front/image/get-app-mobile.png')}}" alt="">
+                        <img src="{{asset('front/image/get-app-mobile.png')}}" height='60%' width='79%'alt="">
                     </div>
                 </div>
                 <div class="col-lg-7 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
@@ -254,8 +261,8 @@
                         <h1>Get The App Now</h1>
                         <p>Mobile apps were originally offered for general productivity information retrieval, including email, calendar, contacts, stock market and weather information. public demand and the availability of developer tools drove rapid expansion into other categories, such as those handled.</p>
                         <div class="get-app-mobile-app">
-                            <a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#" class="home2-get-btn"></a>
-                            <a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#" class="home2-get-btn2"></a>
+                            <a href="#" class="home2-get-btn"></a>
+                            <a href="#" class="home2-get-btn2"></a>
                         </div>
                     </div>
                 </div>
@@ -269,9 +276,9 @@
             <div class="row">
                 <div class="col-md-12 wow fadeInUp text-center" style="visibility: visible; animation-name: fadeInUp;">
                     <div class="section-title">
-                        <h2>Screenshots</h2>
-                        <p>Most such devices are sold with several apps bundled as pre-installed software,
-                            <br> such as a web browser, email client, calendar, mapping program.</p>
+                        <h2>Our Products</h2>
+                        <p>Our products can be presented in mobile and tablet screens, web and dashboards.
+                            <br> It can be downloaded to run on Android, IOS, or even web browsers.</p>
                     </div>
                 </div>
             </div>
@@ -333,7 +340,7 @@
                                     <li>access to all features</li>
                                     <li>24/7 support</li>
                                 </ul>
-                                <a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#" class="price-btn">ordre now</a>
+                                <a href="#" class="price-btn">ordre now</a>
                             </div>
                         </div>
                         <div class="col-md-4 text-center">
@@ -346,7 +353,7 @@
                                     <li>access to all features</li>
                                     <li>24/7 support</li>
                                 </ul>
-                                <a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#" class="price-btn">ordre now</a>
+                                <a href="#" class="price-btn">ordre now</a>
                             </div>
                         </div>
                         <div class="col-md-4 text-center">
@@ -359,7 +366,7 @@
                                     <li>access to all features</li>
                                     <li>24/7 support</li>
                                 </ul>
-                                <a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#" class="price-btn">ordre now</a>
+                                <a href="#" class="price-btn">ordre now</a>
                             </div>
                         </div>
                     </div>
@@ -373,28 +380,28 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3 text-center">
-                    <a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#" class="single-counter">
+                    <a href="#" class="single-counter">
                         <img src="./Home 2 _ Appiyan - App Landing Page_files/counter-icon1.png" alt="">
                         <h1>15K+</h1>
                         <p>App Downloads</p>
                     </a>
                 </div>
                 <div class="col-md-3 text-center">
-                    <a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#" class="single-counter">
+                    <a href="#" class="single-counter">
                         <img src="./Home 2 _ Appiyan - App Landing Page_files/counter-icon2.png" alt="">
                         <h1>400+</h1>
                         <p>Happy Clients</p>
                     </a>
                 </div>
                 <div class="col-md-3 text-center">
-                    <a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#" class="single-counter">
+                    <a href="#" class="single-counter">
                         <img src="./Home 2 _ Appiyan - App Landing Page_files/counter-icon3.png" alt="">
                         <h1>8K+</h1>
                         <p>Active Users</p>
                     </a>
                 </div>
                 <div class="col-md-3 text-center">
-                    <a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#" class="single-counter">
+                    <a href="#" class="single-counter">
                         <img src="./Home 2 _ Appiyan - App Landing Page_files/counter-icon4.png" alt="">
                         <h1>900+</h1>
                         <p>Total Reviews</p>
@@ -581,79 +588,79 @@
                             <img src="./Home 2 _ Appiyan - App Landing Page_files/blog-slide-img2.jpg" alt="">
                             <div class="blog-slide-text">
                                 <p>By <span class="blog-meta">Jerry Myers</span> <span class="blog-bar"> | </span> January 16, 2018</p>
-                                <h4><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#">The Best of, so far</a></h4>
+                                <h4><a href="#">The Best of, so far</a></h4>
                             </div>
                         </div></div><div class="owl-item cloned" style="width: 356.667px; margin-right: 20px;"><div class="blog-single-slide">
                             <img src="./Home 2 _ Appiyan - App Landing Page_files/blog-slide-img3.jpg" alt="">
                             <div class="blog-slide-text">
                                 <p>By <span class="blog-meta">Nicole Adams</span> <span class="blog-bar"> | </span> January 16, 2018</p>
-                                <h4><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#">All the we loved this year</a></h4>
+                                <h4><a href="#">All the we loved this year</a></h4>
                             </div>
                         </div></div><div class="owl-item cloned" style="width: 356.667px; margin-right: 20px;"><div class="blog-single-slide">
                             <img src="./Home 2 _ Appiyan - App Landing Page_files/blog-slide-img3.jpg" alt="">
                             <div class="blog-slide-text">
                                 <p>By <span class="blog-meta">Nicole Adams</span> <span class="blog-bar"> | </span> January 16, 2018</p>
-                                <h4><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#">All the we loved this year</a></h4>
+                                <h4><a href="#">All the we loved this year</a></h4>
                             </div>
                         </div></div><div class="owl-item" style="width: 356.667px; margin-right: 20px;"><div class="blog-single-slide">
                             <img src="./Home 2 _ Appiyan - App Landing Page_files/blog-slide-img1.jpg" alt="">
                             <div class="blog-slide-text">
                                 <p>By <span class="blog-meta">Pamela Reid</span> <span class="blog-bar"> | </span> January 16, 2018</p>
-                                <h4><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#">5 Ways to From Your Mobile</a></h4>
+                                <h4><a href="#">5 Ways to From Your Mobile</a></h4>
                             </div>
                         </div></div><div class="owl-item" style="width: 356.667px; margin-right: 20px;"><div class="blog-single-slide">
                             <img src="./Home 2 _ Appiyan - App Landing Page_files/blog-slide-img2.jpg" alt="">
                             <div class="blog-slide-text">
                                 <p>By <span class="blog-meta">Jerry Myers</span> <span class="blog-bar"> | </span> January 16, 2018</p>
-                                <h4><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#">The Best of, so far</a></h4>
+                                <h4><a href="#">The Best of, so far</a></h4>
                             </div>
                         </div></div><div class="owl-item" style="width: 356.667px; margin-right: 20px;"><div class="blog-single-slide">
                             <img src="./Home 2 _ Appiyan - App Landing Page_files/blog-slide-img3.jpg" alt="">
                             <div class="blog-slide-text">
                                 <p>By <span class="blog-meta">Nicole Adams</span> <span class="blog-bar"> | </span> January 16, 2018</p>
-                                <h4><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#">All the trends we this year</a></h4>
+                                <h4><a href="#">All the trends we this year</a></h4>
                             </div>
                         </div></div><div class="owl-item" style="width: 356.667px; margin-right: 20px;"><div class="blog-single-slide">
                             <img src="./Home 2 _ Appiyan - App Landing Page_files/blog-slide-img1.jpg" alt="">
                             <div class="blog-slide-text">
                                 <p>By <span class="blog-meta">Pamela Reid</span> <span class="blog-bar"> | </span> January 16, 2018</p>
-                                <h4><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#">5 Ways to From Your Mobile</a></h4>
+                                <h4><a href="#">5 Ways to From Your Mobile</a></h4>
                             </div>
                         </div></div><div class="owl-item active" style="width: 356.667px; margin-right: 20px;"><div class="blog-single-slide">
                             <img src="./Home 2 _ Appiyan - App Landing Page_files/blog-slide-img2.jpg" alt="">
                             <div class="blog-slide-text">
                                 <p>By <span class="blog-meta">Jerry Myers</span> <span class="blog-bar"> | </span> January 16, 2018</p>
-                                <h4><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#">The Best of, so far</a></h4>
+                                <h4><a href="#">The Best of, so far</a></h4>
                             </div>
                         </div></div><div class="owl-item active" style="width: 356.667px; margin-right: 20px;"><div class="blog-single-slide">
                             <img src="./Home 2 _ Appiyan - App Landing Page_files/blog-slide-img3.jpg" alt="">
                             <div class="blog-slide-text">
                                 <p>By <span class="blog-meta">Nicole Adams</span> <span class="blog-bar"> | </span> January 16, 2018</p>
-                                <h4><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#">All the we loved this year</a></h4>
+                                <h4><a href="#">All the we loved this year</a></h4>
                             </div>
                         </div></div><div class="owl-item active" style="width: 356.667px; margin-right: 20px;"><div class="blog-single-slide">
                             <img src="./Home 2 _ Appiyan - App Landing Page_files/blog-slide-img3.jpg" alt="">
                             <div class="blog-slide-text">
                                 <p>By <span class="blog-meta">Nicole Adams</span> <span class="blog-bar"> | </span> January 16, 2018</p>
-                                <h4><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#">All the we loved this year</a></h4>
+                                <h4><a href="#">All the we loved this year</a></h4>
                             </div>
                         </div></div><div class="owl-item cloned" style="width: 356.667px; margin-right: 20px;"><div class="blog-single-slide">
                             <img src="./Home 2 _ Appiyan - App Landing Page_files/blog-slide-img1.jpg" alt="">
                             <div class="blog-slide-text">
                                 <p>By <span class="blog-meta">Pamela Reid</span> <span class="blog-bar"> | </span> January 16, 2018</p>
-                                <h4><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#">5 Ways to From Your Mobile</a></h4>
+                                <h4><a href="#">5 Ways to From Your Mobile</a></h4>
                             </div>
                         </div></div><div class="owl-item cloned" style="width: 356.667px; margin-right: 20px;"><div class="blog-single-slide">
                             <img src="./Home 2 _ Appiyan - App Landing Page_files/blog-slide-img2.jpg" alt="">
                             <div class="blog-slide-text">
                                 <p>By <span class="blog-meta">Jerry Myers</span> <span class="blog-bar"> | </span> January 16, 2018</p>
-                                <h4><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#">The Best of, so far</a></h4>
+                                <h4><a href="#">The Best of, so far</a></h4>
                             </div>
                         </div></div><div class="owl-item cloned" style="width: 356.667px; margin-right: 20px;"><div class="blog-single-slide">
                             <img src="./Home 2 _ Appiyan - App Landing Page_files/blog-slide-img3.jpg" alt="">
                             <div class="blog-slide-text">
                                 <p>By <span class="blog-meta">Nicole Adams</span> <span class="blog-bar"> | </span> January 16, 2018</p>
-                                <h4><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#">All the trends we this year</a></h4>
+                                <h4><a href="#">All the trends we this year</a></h4>
                             </div>
                         </div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style=""><div class="owl-dot"><span></span></div><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div></div></div></div>
                 </div>
@@ -719,15 +726,15 @@
                     <div class="contact-form-right">
                         <div class="contact-form-right-single">
                             <h5>Phone</h5>
-                            <a href="tel:4354089068">435 408 9068</a>
+                            <a href="tel:+201220776264">+201220776264</a>
                         </div>
                         <div class="contact-form-right-single">
                             <h5>Email</h5>
-                            <a href="mailto:contact@appiyan.com">contact@appiyan.com</a>
+                            <a href="mailto:contact@appiyan.com">talab.station@gmail.com</a>
                         </div>
                         <div class="contact-form-right-single">
                             <h5>Address</h5>
-                            <p> 3145 Beeghley Street Valley Mills Texas 76689</p>
+                            <p>Sea st, ElArish, North Sinai</p> 
                         </div>
                     </div>
                 </div>
@@ -742,12 +749,12 @@
                 <div class="col-md-12 text-center">
                     <div class="footer-menu">
                         <ul id="footer-list">
-                            <li><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#">Home</a></li>
-                            <li><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#">About</a></li>
-                            <li><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#">Features</a></li>
-                            <li><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#">Pricing</a></li>
-                            <li><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#">Testimonials</a></li>
-                            <li><a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#">Contact</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -755,11 +762,11 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="footer-social-icon">
-                        <a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#"><i class="zmdi zmdi-facebook"></i></a>
-                        <a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#"><i class="zmdi zmdi-twitter"></i></a>
-                        <a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#"><i class="zmdi zmdi-linkedin"></i></a>
-                        <a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#"><i class="zmdi zmdi-instagram"></i></a>
-                        <a href="http://crazycafe.net/html/appiyan/home2.html?fbclid=IwAR2xzA04vFMVh4YCoww1P-ganSW5GMKrK_oHL9CfsQhaEzc98s1Q-jwQW8o#"><i class="zmdi zmdi-google-plus"></i></a>
+                        <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                        <a href="#"><i class="zmdi zmdi-twitter"></i></a>
+                        <a href="#"><i class="zmdi zmdi-linkedin"></i></a>
+                        <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                        <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
                     </div>
                 </div>
             </div>
@@ -773,7 +780,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="footer-title" style="margin-top:32px">
-                        <p>Designed by <a href="https://www.facebook.com/Prof.MohamedAtef.programming">Monosoft Solutions</a></p>
+                        <p>Designed by <a href="https://www.facebook.com/talabstationegypt">Talab Station</a></p>
                     </div>
                 </div>
             </div>

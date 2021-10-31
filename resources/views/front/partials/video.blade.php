@@ -8,7 +8,7 @@
                         <br> such as a web browser, email client, calendar, mapping program.</p>
                 </div>
                 <div class="video-btn-section">
-                    <a href="https://www.youtube.com/watch?v=jbUI2d6RwE8" class="video-btn mfp-iframe">
+                    <a href="https://www.youtube.com/watch?v=ewuE-AE2cbI" class="video-btn mfp-iframe">
                         <img src="{{asset('front/image/video-icon.png')}}" alt="">
                     </a>
                 </div>
