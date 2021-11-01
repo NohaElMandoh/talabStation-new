@@ -4142,7 +4142,7 @@ body.home7 .screenshot-area {
 /* home7 video area css */
 
 body.home7 .video-area-cta {
-	background: url(assets/img/home7-video-bg.png) no-repeat;
+	background: url(front/image/talabstation_video_bg.png) no-repeat;
 	position: relative;
 	padding-bottom: 210px;
 	padding-top: 220px;
