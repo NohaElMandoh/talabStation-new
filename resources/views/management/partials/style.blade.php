@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="{{ asset('Dashboard-UI/css/bootstrap.min.css') }}" />
 <link rel="stylesheet" href="{{ asset('Dashboard-UI/fonts/icomoon/icomoon.css') }}" />
 
- -->
+
 <!-- Other CSS includes plugins - Cleanedup unnecessary CSS -->
 <!-- Chartist css -->
 <link href="{{ asset('Dashboard-UI/vendor/chartist/css/chartist.min.css') }}" rel="stylesheet" />

@@ -23,6 +23,13 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $notifications=auth()->user()->notifications()->latest()->get();
+        return view('admin.home',compact('notifications'));
+    }
+
+    public function front_index()
+    {
+     
         return view('front.home');
     }
 }

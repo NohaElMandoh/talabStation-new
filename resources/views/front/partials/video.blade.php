@@ -1,4 +1,4 @@
-<div class="video-area cta" style="background-image: url('front/image/talabstation_video_bg.png');" >
+<div class="video-area cta" style="background-image: url('front/image/talabstation_video_bg.png');" id="youtube">
     <div class="container">
         <div class="row">
             <div class="col-md-12 wow fadeInUp text-center" style="visibility: visible; animation-name: fadeInUp;">
