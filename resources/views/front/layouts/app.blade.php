@@ -76,7 +76,10 @@
         .footer-area.cta:before{
             background: #000000;
         }
-        
+        .contactedit-area{
+            background: #c40e3d;
+        }
+    
     </style>
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -100,12 +103,10 @@
                 <div class="col-md-2">
                     <!-- logo cta -->
                     <div class="myLogoDiv">
-                        <!-- <img style="height:66px" src="{{asset('front/image/logo.png')}}" alt=""> -->
                         <img style="height:66px" src="{{asset('front/image/logo_white.png')}}" alt="">
                     </div>
                     <div class="myLogoDivRed">
                         <img style="height:66px" src="{{asset('front/image/logo.png')}}" alt="">
-                        <!-- <img style="height:66px" src="{{asset('front/image/logo_white.png')}}" alt=""> -->
                     </div>
                 </div>
                 <div class="col-md-10 text-center">
@@ -121,7 +122,7 @@
                             <li><a href="#screens">Screenshots</a></li>
                             <!-- <li><a href="#pricing">Pricing</a></li>
                             <li><a href="#testimonial">Testimonials</a></li> -->
-                            <li><a href="#contact">Contact</a></li>
+                            <!-- <li><a href="#contact">Contact</a></li> -->
                         </ul>
                         <a href="https://play.google.com/store/apps/details?id=mo.atef.talab.station.client" class="header-btn cta">download now</a>
                     </div>
@@ -601,6 +602,7 @@
         </div>
     </div>
     <!--  blog area end -->
+    <!-- map area start-->
     <div class="blog-slide-area cta">
         <div class="container">
             <div class="row">
@@ -615,8 +617,68 @@
             </div>
         </div>
     </div>
+    <!-- map area end -->
+    <!--  contact edit area start -->
+    <div class="contactedit-area" id="contact" margin="150px" style="display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="section-title ctas1">
+                        <h2>Contact US</h2>
+                        <p>Most such devices are sold with several apps bundled as pre-installed software,
+                            <br> such as a web browser, email client, calendar, mapping program.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-lg-1 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                    <div class="contact-form">
+                        <form action="http://crazycafe.net/html/appiyan/contact.php">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <input type="text" placeholder="Full Name">
+                                </div>
+                                <div class="col-lg-6">
+                                    <input type="email" placeholder="Email">
+                                </div>
+                                <div class="col-lg-12">
+                                    <input type="text" placeholder="Subject">
+                                </div>
+                                <div class="col-lg-12">
+                                    <textarea placeholder="Message"></textarea>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="home-2-form-submit">
+                                        <input type="submit" value="Send message">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+                    <div class="contact-form-right">
+                        <div class="contact-form-right-single">
+                            <h5>Phone</h5>
+                            <a href="tel:+201220776264">+20 1220 7762 64</a>
+                        </div>
+                        <div class="contact-form-right-single">
+                            <h5>Email</h5>
+                            <a href="mailto:contact@appiyan.com">talab.station@gmail.com</a>
+                        </div>
+                        <div class="contact-form-right-single">
+                            <h5>Address</h5>
+                            <p>Sea st, ElArish, North Sinai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  contact edit area end -->
     <!--  contact area start -->
-    <div class="contact-area cta" id="contact">
+    <div class="contact-area cta" id="contact" style="display: none;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -685,7 +747,7 @@
                         <li><a href="#about">About</a></li>    
                         <li><a href="#youtube">Youtube</a></li>
                         <li><a href="#screens">Screenshots</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <!-- <li><a href="#contact">Contact</a></li> -->
                         <li><a href="https://play.google.com/store/apps/details?id=mo.atef.talab.station.client">Download</a></li>
                         </ul>
                     </div>
