@@ -2085,7 +2085,7 @@ a.price-btn:hover {
 }
 
 .video-area:after {
-	background: url(assets/img/video-bg.jpg) no-repeat;
+	background: url(assets/img/home7-video-bg.png) no-repeat;
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -4159,7 +4159,7 @@ body.home7 .video-area-cta {
 }
 
 body.home7 .video-area-cta:after {
-	/* background: url(assets/svg/home7-video-bg.svg) no-repeat; */
+	background: url(assets/svg/home7-video-bg.svg) no-repeat;
 	background-size: cover;
 	opacity: .6;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
@@ -4365,7 +4365,7 @@ body.home7 .single-pricing ul {
 /* home 7 get area css */
 
 body.home7 .get-area {
-	/* background: url(assets/svg/home7-video-bg.svg) no-repeat; */
+	background: url(assets/svg/home7-video-bg.svg) no-repeat;
 	background-size: cover;
 	background-position: center;
 	-webkit-transform: skewY(0deg);
@@ -4464,7 +4464,7 @@ body.home7 .counter-area {
 }
 
 body.home7 .counter-area:after {
-	/* background: url(assets/svg/home7-video-bg.svg) no-repeat; */
+	background: url(assets/svg/home7-video-bg.svg) no-repeat;
 	height: 100%;
 	width: 100%;
 	content: "";
