@@ -142,8 +142,7 @@
                 </div>
                 <div class="col-lg-6 text-center col-md-12 wow fadeInLeft">
                     <div class="home2-hero-text">
-                        <h1>Instant Food Delivery Service<br>
-                            Your Productivity</h1>
+                        <h1>Instant Food Delivery Service</h1>
                         <p>Our services are a mobile-based, or web-based services.
                             <br>You can use phone, laptop, or tablet.
                         </p>
