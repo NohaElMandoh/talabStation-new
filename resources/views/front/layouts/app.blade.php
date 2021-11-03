@@ -26,7 +26,7 @@
 
 <script>
         $(window).scroll(function() {
-            if ($(this).scrollTop() < 50) {
+            if ($(this).scrollTop() < 50 || $(this).scrollTop() < 100) {
                 $('.myLogoDivRed').hide(100);
             } else {
                 $('.myLogoDivRed').show(100);
@@ -79,7 +79,14 @@
         .contactedit-area{
             background: #c40e3d;
         }
-    
+        .slicknav_btn{
+            /* background: #FFFFFF; */
+            margin: -65px 27px -6px;
+        }
+        .slicknav_nav{
+            /* background: #FFFFFF; */
+            color: #000000;
+        }
     </style>
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -106,7 +113,7 @@
                         <img style="height:66px" src="{{asset('front/image/logo_white.png')}}" alt="">
                     </div>
                     <div class="myLogoDivRed">
-                        <img style="height:66px" src="{{asset('front/image/logo.png')}}" alt="">
+                        <img style="height:66px; margin-top:-98px" src="{{asset('front/image/logo.png')}}" alt="">
                     </div>
                 </div>
                 <div class="col-md-10 text-center">
