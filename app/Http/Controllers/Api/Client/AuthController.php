@@ -202,7 +202,7 @@ class AuthController extends Controller
                 Mail::send('emails.verify', ['code' => $code], function ($mail) use ($user) {
                     $mail->from('talab.station@gmail.com', 'تطبيق Talab Station');
                     // $mail->bcc("talab.station@gmail.com");
-                    $mail->to($user->email, $user->name)->subject('كود تفعيل كلمه السر');
+                    $mail->to($user->email, $user->name)->subject('كود تفعيل حسابك علي Talab Station');
                 });
 
                 return responseJson(1, 'برجاء فحص بريدك الالكتروني');
