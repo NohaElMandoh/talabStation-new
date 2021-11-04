@@ -15,24 +15,32 @@
     <!-- bootstrap.min.css -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
+        $(document).ready(function() {
+            $(".myLogoDivRed").hide();
+        });
         $(window).scroll(function() {
             if ($(this).scrollTop() > 50) {
                 $('.myLogoDiv').hide(300);
+                $('.myLogoDivRed').show(100);
+                $(".slicknav_btn").css('background-color','#c40e3d')
             } else {
                 $('.myLogoDiv').show(300);
+                $('.myLogoDivRed').hide(100);
+                $(".slicknav_btn").css('background-color','#FFFFFF')
             }
         });
     </script>
 
-<script>
+    <!-- <script>
+    $('.myLogoDivRed').hide(100);
         $(window).scroll(function() {
-            if ($(this).scrollTop() < 50 || $(this).scrollTop() < 100) {
+            if ($(this).scrollTop() > 50 || $(this).scrollTop() < 50) {
                 $('.myLogoDivRed').hide(100);
             } else {
                 $('.myLogoDivRed').show(100);
             }
         });
-    </script>
+    </script> -->
 
 
     @include('front.partials.style')
@@ -70,20 +78,33 @@
         .about-single-content {
             color: #37424f;
         }
-        .get-area.cta{
+
+        .get-area.cta {
             background: #000000;
         }
-        .footer-area.cta:before{
+
+        .footer-area.cta:before {
             background: #000000;
         }
-        .contactedit-area{
+
+        .contactedit-area {
             background: #c40e3d;
         }
-        .slicknav_btn{
+
+        .slicknav_btn {
             /* background: #FFFFFF; */
-            margin: -65px 27px -6px;
+            margin: -41px 27px -6px;
         }
-        .slicknav_nav{
+
+        /* .slicknav_btn_bg_red {
+            background: #c40e3d;
+        }
+
+        .slicknav_btn_bg_white {
+            background: #ffffff;
+        } */
+
+        .slicknav_nav {
             /* background: #FFFFFF; */
             color: #000000;
         }
@@ -110,10 +131,10 @@
                 <div class="col-md-2">
                     <!-- logo cta -->
                     <div class="myLogoDiv">
-                        <img style="height:66px" src="{{asset('front/image/logo_white.png')}}" alt="">
+                        <img style="height:63.7271px" src="{{asset('front/image/logo_white.png')}}" alt="">
                     </div>
                     <div class="myLogoDivRed">
-                        <img style="height:66px; margin-top:-98px" src="{{asset('front/image/logo.png')}}" alt="">
+                        <img style="height:66px; margin-top:-5px" src="{{asset('front/image/logo.png')}}" alt="">
                     </div>
                 </div>
                 <div class="col-md-10 text-center">
@@ -305,7 +326,7 @@
     </div>
     <!--  featured area end -->
     <!--  video area start -->
-   @include('front.partials.video')
+    @include('front.partials.video')
     <!--  video area end -->
     <!--  screenshot area start -->
     <div class="screenshot-area cta2" id="screens">
@@ -749,12 +770,12 @@
                 <div class="col-md-12 text-center">
                     <div class="footer-menu">
                         <ul id="footer-list">
-                        <li><a href="{{route('home.front')}}">Home</a></li>
-                        <li><a href="#about">About</a></li>    
-                        <li><a href="#youtube">Youtube</a></li>
-                        <li><a href="#screens">Screenshots</a></li>
-                        <!-- <li><a href="#contact">Contact</a></li> -->
-                        <li><a href="https://play.google.com/store/apps/details?id=mo.atef.talab.station.client">Download</a></li>
+                            <li><a href="{{route('home.front')}}">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#youtube">Youtube</a></li>
+                            <li><a href="#screens">Screenshots</a></li>
+                            <!-- <li><a href="#contact">Contact</a></li> -->
+                            <li><a href="https://play.google.com/store/apps/details?id=mo.atef.talab.station.client">Download</a></li>
                         </ul>
                     </div>
                 </div>
@@ -773,7 +794,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="footer-logo">
-                    <a href="{{route('home.front')}}"><img style="height:66px" src="{{asset('front/image/logo_white.png')}}" alt=""></a>
+                        <a href="{{route('home.front')}}"><img style="height:66px" src="{{asset('front/image/logo_white.png')}}" alt=""></a>
                     </div>
                 </div>
             </div>
