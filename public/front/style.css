@@ -1405,8 +1405,8 @@ body.home6 .about-single-item:hover h4 {
 }
 
 body.home2 .about-single-item:hover h4 {
-    background: -webkit-linear-gradient(left, #2b98f0 0%, #3f58b5 70%);
-    background: linear-gradient(to right, #2b98f0 0%, #3f58b5 70%);
+    background: -webkit-linear-gradient(left, #c40e3d 0%, #c40e3d 70%);
+    background: linear-gradient(to right, #c40e3d 0%, #c40e3d 70%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
