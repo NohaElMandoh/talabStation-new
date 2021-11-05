@@ -878,7 +878,7 @@ ul.fancytree-ext-wide span.fancytree-node span.fancytree-title {
 }
 
 .fancytree-plain.fancytree-container.fancytree-treefocus span.fancytree-focused span.fancytree-title {
-    border-color: #3399ff;
+    border-color: #c40e3d;
 }
 
 .fancytree-plain span.fancytree-active span.fancytree-title,
@@ -893,13 +893,13 @@ ul.fancytree-ext-wide span.fancytree-node span.fancytree-title {
 
 .fancytree-plain span.fancytree-node:hover span.fancytree-title {
     background-color: #eff9fe;
-    border-color: #70c0e7;
+    border-color: #c40e3d;
 }
 
 .fancytree-plain.fancytree-container.fancytree-treefocus span.fancytree-active span.fancytree-title,
 .fancytree-plain.fancytree-container.fancytree-treefocus span.fancytree-selected span.fancytree-title {
     background-color: #cbe8f6;
-    border-color: #26a0da;
+    border-color: #c40e3d;
 }
 
 

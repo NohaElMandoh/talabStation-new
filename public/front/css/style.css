@@ -914,7 +914,7 @@ body.home7 .footer-area.cta3 .footer-menu ul li a:hover,
 .header-area.cta8 a.header-btn:hover,
 .home7 div#sticky-wrapper.is-sticky .header-area .mainmenu ul li a:hover,
 .home7 div#sticky-wrapper.is-sticky .header-area .mainmenu ul li.active a {
-    color: #2bd6f8;
+    color: #c40e3d;
 }
 
 .home7-contact-input-bg,
@@ -922,7 +922,7 @@ body.home7 .contact-area.cta3 .contact-form form input[type="text"],
 body.home7 .contact-area.cta3 .contact-form form input[type="email"],
 body.home7 .contact-area.cta3 .contact-form form textarea,
 a.preview-btn:hover {
-    background: #26a4e0;
+    background: #c40e3d;
 }
 
 .home7-focus-color,
@@ -5360,7 +5360,7 @@ div#sticky-wrapper.is-sticky .header-area:after {
 /* home7 sticky css */
 
 body.home7 div#sticky-wrapper.is-sticky .mainmenu a.header-btn {
-    background: #2bd6f8;
+    background: #c40e3d;
     border: 2px solid transparent;
 }
 

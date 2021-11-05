@@ -68,7 +68,6 @@
         a.header-btn.cta {
             color: #c40e3d;
         }
-
         .home2-theme-bg,
         .home2 div#sticky-wrapper.is-sticky .header-area a.header-btn {
             background: #c40e3d;
