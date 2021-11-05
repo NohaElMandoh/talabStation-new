@@ -4,8 +4,9 @@
             <div class="col-md-12 wow fadeInUp text-center" style="visibility: visible; animation-name: fadeInUp;">
                 <div class="section-title ctas1">
                     <h2>Watch Video</h2>
-                    <p>Most such devices are sold with several apps bundled as pre-installed software,
-                        <br> such as a web browser, email client, calendar, mapping program.</p>
+                    <p>Talab Station is available on several devices and supported on different screen sizes,
+                            <br> such as phones, tables, and TVs. Our service is open 24/7.<br>Now, The initial promo video is available.<br>Just click here.
+                        </p>
                 </div>
                 <div class="video-btn-section">
                     <a href="https://www.youtube.com/watch?v=ewuE-AE2cbI" class="video-btn mfp-iframe">

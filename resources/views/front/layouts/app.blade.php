@@ -115,6 +115,36 @@
 </head>
 
 <body class="home2">
+    <!-- start of facebook messenger chat plugin -->
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "109563794608474");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- end of facebook messenger chat plugin -->
+
     <!--  page loader -->
     <div id="loader-wrapper">
         <div id="loader"></div>
@@ -393,8 +423,8 @@
                 <div class="col-md-12 text-center">
                     <div class="section-title cta-pricing">
                         <h2>Pricing</h2>
-                        <p>Most such devices are sold with several apps bundled as pre-installed software,
-                            <br> such as a web browser, email client, calendar, mapping program.
+                        <p>Talab Station is available on different devices and supported on different screen sizes,
+                            <br> such as phones, tables, and TVs.
                         </p>
                     </div>
                 </div>
